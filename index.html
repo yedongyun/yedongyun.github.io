@@ -1,1 +1,104 @@
-hello world
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人网站</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">Your Name</div>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#projects">项目</a></li>
+                <li><a href="#contact">联系方式</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>你好，我是 <span class="highlight">Your Name</span></h1>
+                <p class="subtitle">全栈开发工程师 / 设计师 / 创作者</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn primary">联系我</a>
+                    <a href="#projects" class="btn secondary">查看作品</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>关于我</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>这里是你的个人简介。描述你的专业背景、技能和兴趣爱好。让访问者更好地了解你。</p>
+                    <div class="skills">
+                        <h3>技能专长</h3>
+                        <div class="skill-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>React</span>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>项目展示</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <h3>项目名称</h3>
+                    <p>项目描述</p>
+                    <div class="project-links">
+                        <a href="#" class="btn small">查看演示</a>
+                        <a href="#" class="btn small">源代码</a>
+                    </div>
+                </div>
+                <!-- 可以添加更多项目卡片 -->
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>联系我</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>your.email@example.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+86 123 4567 8900</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="你的名字" required>
+                    <input type="email" placeholder="你的邮箱" required>
+                    <textarea placeholder="你的留言" required></textarea>
+                    <button type="submit" class="btn primary">发送消息</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
